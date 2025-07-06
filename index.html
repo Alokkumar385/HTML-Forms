@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        form {
+            width: 400px;
+            margin: 50px auto;
+            padding: 15px;
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(109, 67, 236);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 6px 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+            background-color: #6d43ec;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Information Form</h2><hr>
+
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" placeholder="Enter your mobile number" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </div>
+
+        <label>Education Done:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="education" value="Secondary"> Secondary<br>
+            <input type="checkbox" name="education" value="Higher Secondary"> Higher Secondary<br>
+            <input type="checkbox" name="education" value="Bachelor"> Bachelor<br>
+            <input type="checkbox" name="education" value="Master"> Master<br>
+        </div>
+
+        <label>Do you like tea?</label>
+        <select name="tea">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
